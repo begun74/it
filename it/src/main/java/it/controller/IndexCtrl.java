@@ -44,47 +44,25 @@ public class IndexCtrl {
 		return model;
 	}
 
-	
-	@RequestMapping(value = {"/404.html"} , method = RequestMethod.GET)
-	public ModelAndView  not_found(HttpSession session) 
+	@RequestMapping(value = {"/support"} , method = RequestMethod.GET)
+	public ModelAndView  support(HttpSession session) 
 	{
-		ModelAndView model = new ModelAndView("404");
+		ModelAndView model = new ModelAndView("support");
+		//System.out.println(""+ttService.getUserList());
 		
 		return model;
 	}
+	
 
 
-	@RequestMapping(value = {"/contact-us.html"} , method = RequestMethod.GET)
+	@RequestMapping(value = {"/contact"} , method = RequestMethod.GET)
 	public ModelAndView  contact_us(HttpSession session) 
 	{
-		ModelAndView model = new ModelAndView("contact-us");
+		ModelAndView model = new ModelAndView("contact");
 		
 		return model;
 	}
 
-	@RequestMapping(value = {"/product-details.html"} , method = RequestMethod.GET)
-	public ModelAndView  product_details(HttpSession session) 
-	{
-		ModelAndView model = new ModelAndView("product-details");
-		
-		return model;
-	}
-
-	@RequestMapping(value = {"/cart.html"} , method = RequestMethod.GET)
-	public ModelAndView  cart(HttpSession session) 
-	{
-		ModelAndView model = new ModelAndView("cart");
-		
-		return model;
-	}
-
-	@RequestMapping(value = {"/checkout.html"} , method = RequestMethod.GET)
-	public ModelAndView  checkout(HttpSession session) 
-	{
-		ModelAndView model = new ModelAndView("checkout");
-		
-		return model;
-	}
 
 	@RequestMapping(value = {"/login.html"} , method = RequestMethod.GET)
 	public ModelAndView  login(HttpSession session) 
@@ -94,10 +72,10 @@ public class IndexCtrl {
 		return model;
 	}
 
-	@RequestMapping(value = {"/shop.html"} , method = RequestMethod.GET)
+	@RequestMapping(value = {"/about"} , method = RequestMethod.GET)
 	public ModelAndView  shop(HttpSession session) 
 	{
-		ModelAndView model = new ModelAndView("shop");
+		ModelAndView model = new ModelAndView("about");
 		
 		return model;
 	}
